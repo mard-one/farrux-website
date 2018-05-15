@@ -1,0 +1,23 @@
+{
+  "name": "farrux",
+  "version": "1.0.0",
+  "description": "personal website",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mard-one/farrux-website.git"
+  },
+  "author": "Mardon Mashrabov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mard-one/farrux-website/issues"
+  },
+  "homepage": "https://github.com/mard-one/farrux-website#readme",
+  "dependencies": {
+    "ejs": "2.6.1",
+    "express": "4.16.3"
+  }
+}
