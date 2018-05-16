@@ -1,0 +1,231 @@
+@font-face {
+  font-family: 'G-Black';
+  src: url('/fonts/Gilroy-Black.ttf');
+}
+
+@font-face {
+  font-family: 'G-Bold';
+  src: url('/fonts/Gilroy-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'G-ExtraBold';
+  src: url('/fonts/Gilroy-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: 'G-Medium';
+  src: url('/fonts/Gilroy-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'G-Regular';
+  src: url('/fonts/Gilroy-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'G-Light';
+  src: url('/fonts/Gilroy-Light.ttf');
+}
+
+@font-face {
+  font-family: 'G-Thin';
+  src: url('/fonts/Gilroy-Thin.ttf');
+}
+
+@font-face {
+  font-family: 'Lactosa';
+  src: url('/fonts/Lactosa.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'G-Regular', sans-serif;
+}
+
+.container {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#navbar {
+  width: 960px;
+  margin-left: -480px;
+  z-index: 10;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  a {
+    padding: 20px 40px;
+    text-transform: uppercase;
+    font-family: 'G-Medium', sans-serif;
+    letter-spacing: 3px;
+  }
+}
+
+img {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#home_body_wrap {
+  #navbar {
+    background-color: #111111;
+    a {
+      color: #555555;
+    }
+
+    a:hover {
+      color: white;
+    }
+  }
+
+  main {
+    margin-top: 200px;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    font-family: 'G-Black', sans-serif;
+    letter-spacing: 3px;
+    span.first_name {
+      font-size: 100px;
+      color: black;
+      font-family: 'Lactosa', sans-serif;
+    }
+
+    span.second_name {
+      display: block;
+      margin-top: -60px;
+      font-size: 50px;
+      color: black;
+      font-family: 'Lactosa', sans-serif;
+    }
+
+    p {
+      margin-top: 20px;
+      width: 460px;
+      font-family: 'G-Regular', sans-serif;
+      font-size: 15px;
+      color: #555555;
+    }
+
+    .highlight {
+      color: aliceblue;
+    }
+  }
+
+  footer {
+    height: 60px;
+    background: transparent;
+  }
+}
+
+#about_body_wrap {
+  #navbar {
+    background-color: #1E1E1E;
+    a{
+      color: #B3AEBD;
+    }
+    a:hover{
+      color: #ffffff;
+    }
+  }
+  
+  main {
+    margin-top: 200px;
+    h1{
+      text-align: center;
+      font-size: 50px;
+      margin-bottom: 50px;
+       color: #aaaaaa;
+    }
+    .year{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 200px;
+      height: 200px;
+      border-radius: 100%;
+      background-color: #940315;
+      p{
+        color: #ffffff;
+        font-family: 'G-Light', sans-serif;
+        font-size: 20px;
+      }
+    }
+    .content{
+      margin-top: 100px;
+      height: 300px;
+      width: calc(100% - 300px);
+      h3{
+        color: #777777;
+        margin-bottom: 10px;
+      }
+      p{
+        font-family: 'G-Regular',
+        sans-serif;
+        font-size: 15px;
+        color: #555555;
+      }
+    }
+    .item-right{
+      display: flex;
+      flex-flow: row;
+      .content {
+        border-top: 5px solid #5C0009;
+        border-right: 5px solid #5C0009;
+        border-top-right-radius: 50px;
+        padding: 50px 50px 0 100px;
+      }
+    }
+    .item-left{
+      display: flex;
+      flex-flow: row-reverse;
+      .content {
+        border-top: 5px solid #5C0009;
+        border-left: 5px solid #5C0009;
+        border-top-left-radius: 50px;
+        padding: 50px 100px 0 50px;
+      }
+    }
+  }
+
+  footer{
+    background-color: #5C0009;
+    display: flex;
+    justify-content: space-between;
+    div{
+      color: #9B96A3;
+      padding: 20px 40px;
+      font-family: 'G-Light',
+      sans-serif;
+    }
+    a {
+      text-decoration-color: #393845;
+      
+    }
+  }
+}
